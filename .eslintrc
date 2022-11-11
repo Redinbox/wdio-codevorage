@@ -1,0 +1,25 @@
+{
+  "extends": "eslint:recommended",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true,
+    "mocha": true
+},
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "globals": {
+    "require": true,
+    "browser": true,
+    "window": true,
+    "document": true,
+    "module": true,
+    "$": true,
+    "$$": true,
+    "exports": true,
+    "Promise": true,
+    "console": true
+  }
+}
