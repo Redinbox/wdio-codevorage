@@ -1,0 +1,39 @@
+{
+  "name": "wdio-coverage-service",
+  "version": "1.0.2",
+  "description": "A WebdriverIO plugin for Istanbul-Coverage results via nyc",
+  "main": "./src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "cd ./test/integration && npm ci && npm test",
+    "lint": "eslint ./src ./test --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Redinbox/wdio-codevorage"
+  },
+  "keywords": [
+    "coverage",
+    "service",
+    "webdriverio",
+    "wdio",
+    "wdio-plugin",
+    "wdio-service",
+   
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Redinbox/wdio-codevorage",
+  "peerDependencies": {
+    "istanbul-lib-coverage": "^3.2.0"
+  },
+  "devDependencies": {
+    "eslint": "~8.9.0"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ]
+  }
+}
